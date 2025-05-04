@@ -125,7 +125,7 @@ If you encounter any issues or need access to the pre-generated large files, ple
 ```
 NY Crime Detective/
 ├── NY Crime Detective.ipynb      # Google Colab notebook
-├── NY Crime Detective.pdf        # Exported notebook (PDF)
+├── NY Crime Detective.pdf        # Project Report
 ├── README.md
 ├── requirements.txt
 ├── cleaned_data.pkl
