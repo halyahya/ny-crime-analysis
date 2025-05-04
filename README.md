@@ -108,6 +108,18 @@ Overall, the analysis revealed that crime incidents are strongly influenced by t
 ---
 
 ## 8. Technical Requirements
+To reproduce the results or run the project:
+
+1. Clone this repository and ensure all required dependencies are installed (see `requirements.txt` or the Colab notebook).
+2. Run the provided scripts to process the raw data and generate the necessary files (`combined_data.pkl`, `train_test_data.joblib`, etc.).
+   
+   > **Note:** Due to file size restrictions, large files (such as `combined_data.pkl` and `train_test_data.joblib`) are not included in this repository. However, they will be automatically created when running the scripts with the available raw data.
+
+3. Alternatively, you can use the provided Google Colab notebook (`NY Crime Detective.ipynb`) included in this repository to run the entire workflow in a cloud environment without local setup.
+
+If you encounter any issues or need access to the pre-generated large files, please contact the project owner.
+---
+## 9. Technical Requirements
 
 ```bash
 conda install -c conda-forge xgboost
@@ -121,13 +133,13 @@ pip install xgboost pandas numpy tqdm matplotlib seaborn scikit-learn joblib
 
 ---
 
-## 9. References
+## 10. References
 
 1. Federal Bureau of Investigation. National Incident-Based Reporting System (NIBRS) Data. New York State Open Data Portal, 2021–2023.
 2. Chen, Tianqi, and Carlos Guestrin. “XGBoost: A Scalable Tree Boosting System.” Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2016.
 
 ---
 
-## 10. Full Report
+## 11. Full Report
 
 For complete methodology, results, and policy recommendations, refer to **Hana_Alyahya_Final_Report.pdf** included in this repository.
