@@ -107,7 +107,7 @@ Overall, the analysis revealed that crime incidents are strongly influenced by t
 
 ---
 
-## 8. Technical Requirements
+## 8. Running the Project
 To reproduce the results or run the project:
 
 1. Clone this repository and ensure all required dependencies are installed (see `requirements.txt` or the Colab notebook).
@@ -119,7 +119,54 @@ To reproduce the results or run the project:
 
 If you encounter any issues or need access to the pre-generated large files, please contact the project owner.
 ---
-## 9. Technical Requirements
+
+## 9. Repository Structure
+
+```
+NY Crime Detective/
+├── NY Crime Detective.ipynb      # Google Colab notebook
+├── NY Crime Detective.pdf        # Exported notebook (PDF)
+├── README.md
+├── requirements.txt
+├── cleaned_data.pkl
+├── crime_smart_features.csv
+├── data_clean.py
+├── data_load.py
+├── eda.py
+├── encoder.joblib
+├── environment_setup.py
+├── evaluation.py
+├── feature_engineering.py
+├── label_encoder.joblib
+├── modeling.py
+├── utilities.py
+├── xgb_final_model.joblib
+├── data/                         # Raw data files
+│
+├── tmp_data/                     # Temporary data
+│
+├── visualizations/               # Generated visualizations
+│
+└── __pycache__/                  # Python cache
+```
+
+
+## 10. Scripts Overview
+
+| Script | Purpose |
+|--------|---------|
+| `data_load.py` | Loads the raw crime data. |
+| `data_clean.py` | Cleans and preprocesses the data. |
+| `eda.py` | Performs exploratory data analysis and generates visualizations. |
+| `feature_engineering.py` | Creates enhanced features to improve model performance. |
+| `modeling.py` | Builds and evaluates machine learning models. |
+| `evaluation.py` | Calculates metrics and interprets model results. |
+| `environment_setup.py` | Sets up the required Python environment. |
+| `utilities.py` | Contains helper functions used across scripts. |
+| `NY Crime Detective.ipynb` | Complete workflow in Google Colab (data prep → EDA → modeling → results). |
+
+---
+## 11. Installation & Dependencies
 
 ```bash
 conda install -c conda-forge xgboost
@@ -133,13 +180,13 @@ pip install xgboost pandas numpy tqdm matplotlib seaborn scikit-learn joblib
 
 ---
 
-## 10. References
+## 12. References
 
 1. Federal Bureau of Investigation. National Incident-Based Reporting System (NIBRS) Data. New York State Open Data Portal, 2021–2023.
 2. Chen, Tianqi, and Carlos Guestrin. “XGBoost: A Scalable Tree Boosting System.” Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2016.
 
 ---
 
-## 11. Full Report
+## 13. Full Report
 
 For complete methodology, results, and policy recommendations, refer to **Hana_Alyahya_Final_Report.pdf** included in this repository.
